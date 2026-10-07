@@ -218,6 +218,9 @@
         <a href="#letter" class="hover:text-rosegold-300 transition-colors flex items-center gap-1.5">
           <i class="fa-regular fa-envelope text-xs text-lavender-400"></i> Secret Note
         </a>
+        <a href="#favorite-song" class="hover:text-rosegold-300 transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-music text-xs text-rosegold-400"></i> Her Song
+        </a>
         <a href="#compliments" class="hover:text-rosegold-300 transition-colors flex items-center gap-1.5">
           <i class="fa-regular fa-face-smile text-xs text-rosegold-400"></i> Smile Box
         </a>
@@ -246,6 +249,9 @@
       </a>
       <a href="#traits" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 hover:text-rosegold-300 font-medium">
         <i class="fa-regular fa-star mr-3 text-amberwarm-400"></i> Why You're Extraordinary
+      </a>
+      <a href="#favorite-song" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 hover:text-rosegold-300 font-medium">
+        <i class="fa-solid fa-music mr-3 text-rosegold-400"></i> Her Best Song 🎵
       </a>
       <a href="#letter" onclick="toggleMobileMenu(); openEnvelopeModal();" class="block py-2 text-slate-200 hover:text-rosegold-300 font-medium">
         <i class="fa-regular fa-envelope mr-3 text-lavender-400"></i> Open Secret Letter
@@ -296,6 +302,11 @@
             <span>Open Secret Note</span>
           </button>
 
+          <a href="#favorite-song" class="px-6 py-3.5 rounded-full text-sm font-semibold glass-pill border border-rosegold-400/40 text-rosegold-300 hover:bg-rosegold-400/10 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2 shadow-lg">
+            <i class="fa-solid fa-music text-rosegold-400"></i>
+            <span>Her Best Song 🎶</span>
+          </a>
+
           <a href="#compliments" onclick="generateRandomCompliment()" class="px-6 py-3.5 rounded-full text-sm font-semibold glass-pill border border-amberwarm-400/30 text-amberwarm-400 hover:bg-amberwarm-400/10 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2 shadow-lg">
             <i class="fa-solid fa-sparkles text-amberwarm-400"></i>
             <span>Daily Compliment</span>
@@ -342,13 +353,13 @@
     <section id="journey" class="py-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
       <div class="text-center space-y-4 mb-16">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill text-xs font-semibold text-rosegold-300 uppercase tracking-wider">
-          <i class="fa-regular fa-clock"></i> Chapters & Chronicles
+          <i class="fa-brands fa-instagram text-rosegold-400"></i> Our Story & Connection
         </div>
         <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white">
           Our Interactive Memory Journey
         </h2>
         <p class="max-w-xl mx-auto text-slate-300 text-sm sm:text-base">
-          From unforgettable campus afternoons at NIT Manipur to late-night conversations and spontaneous laughter — every memory holds a special place.
+          From a serendipitous Instagram connect to endless late-night chats, shared reels, and an authentic bond — how two strangers became true friends.
         </p>
       </div>
 
@@ -361,21 +372,21 @@
           <!-- Timeline Item 1 -->
           <div class="relative flex flex-col md:flex-row items-start md:items-center group">
             <div class="flex items-center md:w-1/2 md:justify-end md:pr-10 pl-12 md:pl-0 w-full">
-              <div class="glass-card p-6 rounded-2xl w-full hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="showMemoryModal('The First Spark', 'When simple greetings and introductions blossomed into one of the most natural, comfortable friendships. Your warmth made conversations feel like they could go on forever without a second of awkward silence.', 'NIT Manipur Campus', 'fa-seedling', '#E8A5A5')">
+              <div class="glass-card p-6 rounded-2xl w-full hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="showMemoryModal('The First DM on Instagram', 'It all began with a simple story reply and a casual message in the Instagram DMs. What could have easily been just another polite online interaction immediately sparkled with an easy, unforced connection.', 'Instagram DM Connect', 'fa-paper-plane', '#E8A5A5')">
                 <div class="flex items-center justify-between text-xs text-rosegold-300 font-semibold mb-2">
-                  <span class="flex items-center gap-1.5"><i class="fa-regular fa-calendar"></i> The First Chapters</span>
-                  <span class="px-2 py-0.5 rounded-full bg-rosegold-400/10 border border-rosegold-400/20">NIT Manipur</span>
+                  <span class="flex items-center gap-1.5"><i class="fa-brands fa-instagram"></i> The First Hello</span>
+                  <span class="px-2 py-0.5 rounded-full bg-rosegold-400/10 border border-rosegold-400/20">Instagram DMs</span>
                 </div>
-                <h3 class="font-serif text-xl font-bold text-white mb-2 group-hover:text-rosegold-300 transition-colors">A Refreshing First Impression</h3>
+                <h3 class="font-serif text-xl font-bold text-white mb-2 group-hover:text-rosegold-300 transition-colors">The Serendipitous DM</h3>
                 <p class="text-slate-300 text-sm leading-relaxed mb-4">
-                  From the very beginning, your spontaneous wit and genuine, down-to-earth persona brought an effortless calm into the room.
+                  A casual reply to an Instagram story led to a first exchange. Right away, your witty replies and genuine nature made you stand out from anyone else.
                 </p>
                 <div class="flex items-center justify-between pt-2 border-t border-white/5 text-xs text-slate-400">
                   <span class="text-rosegold-300 font-medium flex items-center gap-1">
                     Click to read reflection <i class="fa-solid fa-angle-right text-[10px]"></i>
                   </span>
                   <button onclick="event.stopPropagation(); likeMemory(1)" class="hover:text-rose-400 transition-colors flex items-center gap-1 memory-heart-btn" id="mem-btn-1">
-                    <i class="fa-regular fa-heart"></i> <span id="mem-count-1">28</span>
+                    <i class="fa-regular fa-heart"></i> <span id="mem-count-1">34</span>
                   </button>
                 </div>
               </div>
@@ -387,14 +398,14 @@
             </div>
 
             <div class="hidden md:block md:w-1/2 md:pl-10 text-xs text-slate-400 font-mono">
-              <span class="px-3 py-1 rounded-full glass-pill border border-white/5">01 // The Beginning</span>
+              <span class="px-3 py-1 rounded-full glass-pill border border-white/5">01 // The Instagram Meet</span>
             </div>
           </div>
 
           <!-- Timeline Item 2 -->
           <div class="relative flex flex-col md:flex-row items-start md:items-center group">
             <div class="hidden md:block md:w-1/2 md:pr-10 md:text-right text-xs text-slate-400 font-mono">
-              <span class="px-3 py-1 rounded-full glass-pill border border-white/5">02 // Campus Chronicles</span>
+              <span class="px-3 py-1 rounded-full glass-pill border border-white/5">02 // Endless Conversations</span>
             </div>
 
             <!-- Timeline center badge -->
@@ -403,21 +414,21 @@
             </div>
 
             <div class="flex items-center md:w-1/2 md:pl-10 pl-12 w-full">
-              <div class="glass-card p-6 rounded-2xl w-full hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="showMemoryModal('Cafeteria Chai & Campus Walks', 'Those evening tea breaks at the campus stalls, discussing exam pressures, quirky professors, and hilarious daily observations. Even when the days were hectic, having your perspective turned stress into laughter.', 'Campus Evenings', 'fa-mug-hot', '#F59E0B')">
+              <div class="glass-card p-6 rounded-2xl w-full hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="showMemoryModal('Reels, Voice Notes & Late Nights', 'Brief replies quickly turned into paragraph-long discussions, sending hilarious reels back and forth, and chatting late into the night without even realizing how quickly time slipped away.', 'Daily Talks & Inside Jokes', 'fa-comments', '#F59E0B')">
                 <div class="flex items-center justify-between text-xs text-amberwarm-400 font-semibold mb-2">
-                  <span class="flex items-center gap-1.5"><i class="fa-regular fa-calendar"></i> Everyday Sunshine</span>
-                  <span class="px-2 py-0.5 rounded-full bg-amberwarm-400/10 border border-amberwarm-400/20">Chai & Stories</span>
+                  <span class="flex items-center gap-1.5"><i class="fa-regular fa-message"></i> Daily Routine</span>
+                  <span class="px-2 py-0.5 rounded-full bg-amberwarm-400/10 border border-amberwarm-400/20">Reels & Banter</span>
                 </div>
-                <h3 class="font-serif text-xl font-bold text-white mb-2 group-hover:text-amberwarm-400 transition-colors">Evening Tea & Unfiltered Laughs</h3>
+                <h3 class="font-serif text-xl font-bold text-white mb-2 group-hover:text-amberwarm-400 transition-colors">From Casual Texts to Daily Talks</h3>
                 <p class="text-slate-300 text-sm leading-relaxed mb-4">
-                  Walking around the campus trails, debating the most random topics, and watching you crack up over small inside jokes that only we understood.
+                  Trading relatable memes, sharing random snippets of each other’s days, and discovering countless shared thoughts. Talking to you became the highlight of every day.
                 </p>
                 <div class="flex items-center justify-between pt-2 border-t border-white/5 text-xs text-slate-400">
                   <span class="text-amberwarm-400 font-medium flex items-center gap-1">
                     Click to read reflection <i class="fa-solid fa-angle-right text-[10px]"></i>
                   </span>
                   <button onclick="event.stopPropagation(); likeMemory(2)" class="hover:text-rose-400 transition-colors flex items-center gap-1 memory-heart-btn" id="mem-btn-2">
-                    <i class="fa-regular fa-heart"></i> <span id="mem-count-2">42</span>
+                    <i class="fa-regular fa-heart"></i> <span id="mem-count-2">49</span>
                   </button>
                 </div>
               </div>
@@ -427,21 +438,21 @@
           <!-- Timeline Item 3 -->
           <div class="relative flex flex-col md:flex-row items-start md:items-center group">
             <div class="flex items-center md:w-1/2 md:justify-end md:pr-10 pl-12 md:pl-0 w-full">
-              <div class="glass-card p-6 rounded-2xl w-full hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="showMemoryModal('Late-Night Deep Talks', 'Past midnight when the entire world was asleep, we talked about our ambitions, family, fears, and hopes for the next five years. You were always so deeply thoughtful, perceptive, and encouraging.', 'Night Sky Discussions', 'fa-moon', '#C084FC')">
+              <div class="glass-card p-6 rounded-2xl w-full hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="showMemoryModal('Breaking Past The Screen', 'Online friendships can often stay on the surface, but with you, conversations grew deeply comforting. You proved to be a real listener who truly understands what matters without pretense.', 'Deep Friendship', 'fa-heart-circle-check', '#C084FC')">
                 <div class="flex items-center justify-between text-xs text-lavender-300 font-semibold mb-2">
-                  <span class="flex items-center gap-1.5"><i class="fa-regular fa-calendar"></i> Deep Hours</span>
-                  <span class="px-2 py-0.5 rounded-full bg-lavender-400/10 border border-lavender-400/20">Starlight Thoughts</span>
+                  <span class="flex items-center gap-1.5"><i class="fa-solid fa-sparkles"></i> Sincere Bond</span>
+                  <span class="px-2 py-0.5 rounded-full bg-lavender-400/10 border border-lavender-400/20">Real Connection</span>
                 </div>
-                <h3 class="font-serif text-xl font-bold text-white mb-2 group-hover:text-lavender-300 transition-colors">Late-Night Heart-to-Hearts</h3>
+                <h3 class="font-serif text-xl font-bold text-white mb-2 group-hover:text-lavender-300 transition-colors">Beyond The Screen</h3>
                 <p class="text-slate-300 text-sm leading-relaxed mb-4">
-                  Sharing dreams, ambitions, and honest life perspectives under the quiet stars. Finding a listener who truly cares without judgment is rare.
+                  The digital distance vanished as trust blossomed. We shared aspirations, honest perspectives on life, and real emotions without any hesitation.
                 </p>
                 <div class="flex items-center justify-between pt-2 border-t border-white/5 text-xs text-slate-400">
                   <span class="text-lavender-300 font-medium flex items-center gap-1">
                     Click to read reflection <i class="fa-solid fa-angle-right text-[10px]"></i>
                   </span>
                   <button onclick="event.stopPropagation(); likeMemory(3)" class="hover:text-rose-400 transition-colors flex items-center gap-1 memory-heart-btn" id="mem-btn-3">
-                    <i class="fa-regular fa-heart"></i> <span id="mem-count-3">37</span>
+                    <i class="fa-regular fa-heart"></i> <span id="mem-count-3">58</span>
                   </button>
                 </div>
               </div>
@@ -453,14 +464,14 @@
             </div>
 
             <div class="hidden md:block md:w-1/2 md:pl-10 text-xs text-slate-400 font-mono">
-              <span class="px-3 py-1 rounded-full glass-pill border border-white/5">03 // Midnight Bonds</span>
+              <span class="px-3 py-1 rounded-full glass-pill border border-white/5">03 // Genuine Trust</span>
             </div>
           </div>
 
           <!-- Timeline Item 4 -->
           <div class="relative flex flex-col md:flex-row items-start md:items-center group">
             <div class="hidden md:block md:w-1/2 md:pr-10 md:text-right text-xs text-slate-400 font-mono">
-              <span class="px-3 py-1 rounded-full glass-pill border border-white/5">04 // Through The Thick & Thin</span>
+              <span class="px-3 py-1 rounded-full glass-pill border border-white/5">04 // Truly Good Friends</span>
             </div>
 
             <!-- Timeline center badge -->
@@ -469,21 +480,21 @@
             </div>
 
             <div class="flex items-center md:w-1/2 md:pl-10 pl-12 w-full">
-              <div class="glass-card p-6 rounded-2xl w-full hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="showMemoryModal('The Pillar in Moments of Doubt', 'Whenever semester exams peaked or self-doubt crept in, your calm reminder that everything will turn out fine was a breath of fresh air. You possess an innate emotional intelligence that lifts people up.', 'Exam Crunch & Support', 'fa-hand-holding-heart', '#E8A5A5')">
+              <div class="glass-card p-6 rounded-2xl w-full hover:-translate-y-1 transition-all duration-300 cursor-pointer" onclick="showMemoryModal('Inseparable Friends', 'What started on Instagram with a random notification evolved into one of the most reliable and cherished friendships in my life. You are someone I know will always be there, and vice versa.', 'Unshakable Bond', 'fa-award', '#E8A5A5')">
                 <div class="flex items-center justify-between text-xs text-rosegold-300 font-semibold mb-2">
-                  <span class="flex items-center gap-1.5"><i class="fa-regular fa-calendar"></i> Quiet Strength</span>
-                  <span class="px-2 py-0.5 rounded-full bg-rosegold-400/10 border border-rosegold-400/20">Constant Anchor</span>
+                  <span class="flex items-center gap-1.5"><i class="fa-solid fa-infinity"></i> Forever Bond</span>
+                  <span class="px-2 py-0.5 rounded-full bg-rosegold-400/10 border border-rosegold-400/20">Best Friends</span>
                 </div>
-                <h3 class="font-serif text-xl font-bold text-white mb-2 group-hover:text-rosegold-300 transition-colors">The Reassuring Presence</h3>
+                <h3 class="font-serif text-xl font-bold text-white mb-2 group-hover:text-rosegold-300 transition-colors">A Friendship For Keeps</h3>
                 <p class="text-slate-300 text-sm leading-relaxed mb-4">
-                  Through demanding projects and high-stress days, your calm perspective and encouraging words acted like a lighthouse in chaotic weather.
+                  From online strangers to an irreplaceable confidante. Today, having Prity Kumari as a good friend is one of the most heartwarming gifts life has granted.
                 </p>
                 <div class="flex items-center justify-between pt-2 border-t border-white/5 text-xs text-slate-400">
                   <span class="text-rosegold-300 font-medium flex items-center gap-1">
                     Click to read reflection <i class="fa-solid fa-angle-right text-[10px]"></i>
                   </span>
                   <button onclick="event.stopPropagation(); likeMemory(4)" class="hover:text-rose-400 transition-colors flex items-center gap-1 memory-heart-btn" id="mem-btn-4">
-                    <i class="fa-regular fa-heart"></i> <span id="mem-count-4">51</span>
+                    <i class="fa-regular fa-heart"></i> <span id="mem-count-4">76</span>
                   </button>
                 </div>
               </div>
@@ -720,6 +731,136 @@
       </div>
     </section>
 
+    <!-- SECTION: PRITY'S CURRENT FAVORITE SONG -->
+    <section id="favorite-song" class="py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+      <div class="text-center space-y-4 mb-16">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill text-xs font-semibold text-rose-300 uppercase tracking-wider">
+          <i class="fa-solid fa-music text-rose-400"></i> Prity's Best Song Right Now
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+          Tu Saanwal Phul Kastoori
+        </h2>
+        <p class="max-w-xl mx-auto text-slate-300 text-sm sm:text-base">
+          Chalre Chalre Waal • Acoustic Rendition • The soulful, poetic melody that sits right at the top of Prity's playlist.
+        </p>
+      </div>
+
+      <!-- Main Music Showcase Card -->
+      <div class="glass-card p-6 sm:p-10 rounded-3xl border border-rose-400/25 shadow-2xl relative overflow-hidden">
+        <!-- Ambient back glow -->
+        <div class="absolute -top-20 -right-20 w-72 h-72 bg-rosegold-400/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-20 -left-20 w-72 h-72 bg-amberwarm-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Left: Video & Audio Player Frame (7 cols) -->
+          <div class="lg:col-span-7 space-y-5">
+            <!-- Vinyl & Track Banner -->
+            <div class="flex items-center justify-between pb-2 border-b border-white/5">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full bg-midnight-900 border border-rosegold-400/40 p-1 flex items-center justify-center shadow-lg shadow-rosegold-400/20 animate-spin-slow">
+                  <div class="w-full h-full rounded-full bg-gradient-to-tr from-rose-400 to-amber-400 flex items-center justify-center text-midnight-900 text-xs font-bold">
+                    <i class="fa-solid fa-compact-disc text-base"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="font-serif text-lg font-bold text-white">Tu Saanwal Phul Kastoori</h3>
+                  <p class="text-xs text-rosegold-300">Shanzy Sial & Shafaullah Khan Rokhri • Folk Acoustic</p>
+                </div>
+              </div>
+              <span class="px-3 py-1 rounded-full text-[11px] font-semibold bg-rose-400/10 border border-rose-400/30 text-rose-300">
+                #1 On Her Repeat ✨
+              </span>
+            </div>
+
+            <!-- Responsive Video / Audio Player -->
+            <div class="relative rounded-2xl overflow-hidden bg-midnight-900/80 border border-white/10 shadow-2xl aspect-video group">
+              <iframe 
+                id="main-song-iframe"
+                class="w-full h-full"
+                src="https://www.youtube-nocookie.com/embed/-BIXo8-9vtA?enablejsapi=1&rel=0" 
+                title="Tu Saanwal Phul Kastoori - Chalre Chalre Waal"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <!-- Quick Player Actions -->
+            <div class="flex flex-wrap items-center justify-between gap-3 pt-2 text-xs">
+              <div class="flex items-center gap-2">
+                <button onclick="toggleAudio()" class="px-4 py-2 rounded-full bg-gradient-to-r from-rosegold-400 to-amberwarm-400 text-midnight-900 font-semibold hover:scale-105 transition-transform flex items-center gap-1.5 shadow-md">
+                  <i class="fa-solid fa-play text-xs"></i>
+                  <span>Sync Ambient Player</span>
+                </button>
+                <a href="https://www.youtube.com/watch?v=-BIXo8-9vtA" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full glass-pill border border-white/10 text-slate-300 hover:text-white hover:border-white/30 transition-all flex items-center gap-1.5">
+                  <i class="fa-brands fa-youtube text-rose-400"></i>
+                  <span>Open in YouTube</span>
+                </a>
+              </div>
+              <div class="text-slate-400 flex items-center gap-1">
+                <i class="fa-solid fa-headphones text-rosegold-400"></i>
+                <span>Best with headphones</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Lyrics & Poetic Meaning (5 cols) -->
+          <div class="lg:col-span-5 space-y-4">
+            <div class="glass-pill p-5 rounded-2xl border border-white/10 space-y-3">
+              <div class="flex items-center justify-between text-xs text-rosegold-300 font-semibold border-b border-white/5 pb-2">
+                <span class="flex items-center gap-1.5">
+                  <i class="fa-solid fa-feather-pointed"></i> Beautiful Lyrics
+                </span>
+                <span class="text-[10px] text-slate-400 font-mono">Saraiki Folk</span>
+              </div>
+
+              <!-- Verses -->
+              <div class="font-serif text-sm sm:text-base leading-relaxed text-slate-200 italic space-y-3 max-h-56 overflow-y-auto pr-2">
+                <p class="text-rosegold-300 font-medium">
+                  "Tu Saanwal phul kastoori,<br>
+                  Tedi thi gayi main mashhoori..."
+                </p>
+                <p>
+                  "Jaa jaate, har jaate,<br>
+                  Bhein de din log misaal!"
+                </p>
+                <p class="text-amberwarm-400">
+                  "Jhalray jhalray waar,<br>
+                  Moday rakh nay kaali shaal,<br>
+                  Hath chee nay rakha rumaal..."
+                </p>
+                <p class="text-lavender-300 font-medium">
+                  "Tedi reesan koun kare,<br>
+                  Vey tedi reesan koun kare..."
+                </p>
+              </div>
+
+              <!-- Poetic Translation Box -->
+              <div class="pt-3 border-t border-white/5 text-xs text-slate-400 leading-relaxed space-y-1.5 font-sans">
+                <div class="text-[11px] font-semibold text-white flex items-center gap-1">
+                  <i class="fa-solid fa-sparkles text-amberwarm-400"></i> Why It Fits Prity Kumari:
+                </div>
+                <p class="italic text-slate-300">
+                  Like the rare, lingering fragrance of a kasturi flower, your warmth and aura are completely unmatched. The lyrics capture that natural, unforced grace which makes you stand out effortlessly.
+                </p>
+              </div>
+            </div>
+
+            <!-- Song Dedication Footer -->
+            <div class="flex items-center justify-between px-2 pt-1">
+              <span class="text-xs text-slate-400">Dedicated with love for Prity</span>
+              <button onclick="incrementHeartReaction()" class="px-3.5 py-1.5 rounded-full text-xs font-semibold glass-pill border border-rose-400/40 text-rose-400 hover:bg-rose-400/10 transition-colors flex items-center gap-1.5">
+                <i class="fa-solid fa-heart"></i>
+                <span>Loved Song</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- SECTION 6: WISH JAR & INTERACTIVE NOTES -->
     <section id="wishes" class="py-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
       <div class="text-center space-y-4 mb-16">
@@ -820,18 +961,18 @@
     </div>
   </footer>
 
-  <!-- FLOATING BOTTOM AUDIO VIBE PLAYER (Placeholder + Web Audio Synth) -->
-  <div class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-6 sm:w-96 z-40 glass-card p-3.5 rounded-2xl border border-rosegold-400/30 shadow-2xl flex items-center justify-between gap-4 backdrop-blur-2xl transition-all duration-300" id="audio-bar">
-    <div class="flex items-center gap-3 overflow-hidden">
+  <!-- FLOATING BOTTOM AUDIO VIBE PLAYER -->
+  <div class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-6 sm:w-96 z-40 glass-card p-3.5 rounded-2xl border border-rose-400/30 shadow-2xl flex items-center justify-between gap-4 backdrop-blur-2xl transition-all duration-300" id="audio-bar">
+    <div class="flex items-center gap-3 overflow-hidden cursor-pointer" onclick="document.getElementById('favorite-song').scrollIntoView({ behavior: 'smooth' })">
       <!-- Disc Icon with Slow Spin when playing -->
-      <button onclick="toggleAudio()" class="w-11 h-11 rounded-xl bg-gradient-to-tr from-rosegold-400 to-amberwarm-400 text-midnight-900 flex items-center justify-center shadow-lg shadow-rosegold-400/30 hover:scale-105 active:scale-95 transition-transform shrink-0" id="play-pause-btn" aria-label="Play ambient background melody">
+      <button onclick="event.stopPropagation(); toggleAudio()" class="w-11 h-11 rounded-xl bg-gradient-to-tr from-rose-400 to-amberwarm-400 text-midnight-900 flex items-center justify-center shadow-lg shadow-rose-400/30 hover:scale-105 active:scale-95 transition-transform shrink-0" id="play-pause-btn" aria-label="Play Prity's favorite song melody">
         <i class="fa-solid fa-play text-sm ml-0.5" id="play-pause-icon"></i>
       </button>
 
       <!-- Track Info & Animated Wave -->
       <div class="truncate">
         <div class="flex items-center gap-2">
-          <span class="text-xs font-semibold text-white truncate">Golden Hour Acoustic</span>
+          <span class="text-xs font-semibold text-white truncate">Tu Saanwal Phul Kastoori</span>
           <div class="flex items-end gap-0.5 h-4" id="sound-wave-bars">
             <span class="sound-bar bar-1 w-1 bg-rosegold-400 rounded-full h-1"></span>
             <span class="sound-bar bar-2 w-1 bg-lavender-400 rounded-full h-1"></span>
@@ -839,7 +980,7 @@
             <span class="sound-bar bar-4 w-1 bg-rosegold-300 rounded-full h-1"></span>
           </div>
         </div>
-        <p class="text-[11px] text-slate-400 truncate">Ambient Harmonic Vibe for Prity</p>
+        <p class="text-[11px] text-rosegold-300 truncate">Prity's Best Song • Tap to View 🎧</p>
       </div>
     </div>
 
@@ -879,16 +1020,16 @@
             I wanted to create something quiet, beautiful, and lasting to express just how deeply your presence is valued.
           </p>
           <p>
-            College life at NIT Manipur—with its rush of classes, assignment deadlines, and unpredictable days—was made infinitely warmer and more memorable because of your laughter and companionship. Whenever things felt overwhelming, your calm composure and spontaneous jokes felt like an instant reset button.
+            It is still so wonderful to look back at how we first crossed paths online on Instagram. What began with a simple DM and casual replies blossomed into hours of effortless laughter, late-night conversations, shared reels, and one of the most trusted friendships I have today.
           </p>
           <p>
-            You have a rare quality that few people in this world possess: the gift of making others feel completely heard, supported, and at ease without demanding anything in return. Your intelligence, dignity, warmth, and effortless sense of humor make you truly one of a kind.
+            You have a rare quality that few people in this world possess: the gift of making others feel completely heard, supported, and at ease without demanding anything in return. Even through a screen, your warmth, dignity, intelligence, and spontaneous sense of humor made you feel like an instant confidante.
           </p>
           <p>
             As you walk through every new chapter of life, never doubt your worth or the brilliance you carry inside. May every dream you quietly harbor turn into reality, and may you always be surrounded by genuine people who appreciate you just as much as you deserve.
           </p>
           <p class="pt-4 text-rosegold-300 italic font-semibold">
-            Thank you for being such an extraordinary part of this journey.
+            Thank you for being such an extraordinary friend on this journey.
           </p>
         </div>
 
@@ -1240,16 +1381,16 @@
 
 I wanted to create something quiet, beautiful, and lasting to express just how deeply your presence is valued.
 
-College life at NIT Manipur—with its rush of classes, assignment deadlines, and unpredictable days—was made infinitely warmer and more memorable because of your laughter and companionship. Whenever things felt overwhelming, your calm composure and spontaneous jokes felt like an instant reset button.
+It is still so wonderful to look back at how we first crossed paths online on Instagram. What began with a simple DM and casual replies blossomed into hours of effortless laughter, late-night conversations, shared reels, and one of the most trusted friendships I have today.
 
-You have a rare quality that few people in this world possess: the gift of making others feel completely heard, supported, and at ease without demanding anything in return. Your intelligence, dignity, warmth, and effortless sense of humor make you truly one of a kind.
+You have a rare quality that few people in this world possess: the gift of making others feel completely heard, supported, and at ease without demanding anything in return. Even through a screen, your warmth, dignity, intelligence, and spontaneous sense of humor made you feel like an instant confidante.
 
 As you walk through every new chapter of life, never doubt your worth or the brilliance you carry inside. May every dream you quietly harbor turn into reality, and may you always be surrounded by genuine people who appreciate you just as much as you deserve.
 
-Thank you for being such an extraordinary part of this journey.
+Thank you for being such an extraordinary friend on this journey.
 
 Always wishing the very best,
-Anshu Upadhyay (NIT Manipur)`;
+Anshu Upadhyay`;
 
       const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
       const url = URL.createObjectURL(blob);
@@ -1317,50 +1458,57 @@ Anshu Upadhyay (NIT Manipur)`;
     // -------------------------------------------------------------
     // 9. WEB AUDIO API AMBIENT SOUND GENERATOR (Harmonic Lofi Chimes)
     // -------------------------------------------------------------
+    // 9. WEB AUDIO API AMBIENT SOUND GENERATOR ("Tu Saanwal Phul Kastoori" Melody)
+    // -------------------------------------------------------------
     let audioCtx = null;
     let isPlaying = false;
     let isMuted = false;
     let chordInterval = null;
 
-    // Peaceful pentatonic soothing ambient chord frequencies (C major / A minor airy extension)
-    const chords = [
-      [261.63, 329.63, 392.00, 523.25], // C Major
-      [220.00, 261.63, 329.63, 440.00], // A Minor
-      [349.23, 440.00, 523.25, 659.25], // F Major 7
-      [392.00, 493.88, 587.33, 783.99]  // G Major
+    // Melodic phrases evoking the famous "Tu Saanwal Phul Kastoori / Chalre Chalre Waal" acoustic folk cadence
+    const melodyPhrases = [
+      // "Tu Saanwal phul kastoori..."
+      [392.00, 392.00, 440.00, 523.25, 493.88, 440.00, 392.00],
+      // "Tedi thi gayi main mashhoori..."
+      [392.00, 440.00, 493.88, 523.25, 493.88, 440.00, 392.00],
+      // "Jhalray jhalray waar, moday rakh nay kaali shaal..."
+      [329.63, 392.00, 440.00, 493.88, 523.25, 493.88, 440.00],
+      // "Tedi reesan koun kare..."
+      [440.00, 493.88, 440.00, 392.00, 329.63, 392.00]
     ];
-    let currentChordIdx = 0;
+    let currentPhraseIdx = 0;
 
     function playSoftArpeggio() {
       if (!audioCtx || !isPlaying || isMuted) return;
 
-      const chord = chords[currentChordIdx];
-      currentChordIdx = (currentChordIdx + 1) % chords.length;
+      const notes = melodyPhrases[currentPhraseIdx];
+      currentPhraseIdx = (currentPhraseIdx + 1) % melodyPhrases.length;
 
-      chord.forEach((freq, i) => {
+      notes.forEach((freq, i) => {
         setTimeout(() => {
           if (!isPlaying || isMuted) return;
           try {
             const osc = audioCtx.createOscillator();
             const gain = audioCtx.createGain();
 
-            osc.type = 'sine';
+            // Warm triangle & sine blend for rich folk acoustic tone
+            osc.type = i % 2 === 0 ? 'triangle' : 'sine';
             osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
 
-            // Gentle attack and decay
-            gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
-            gain.gain.exponentialRampToValueAtTime(0.04, audioCtx.currentTime + 0.4);
-            gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 2.8);
+            // Plucked acoustic bell envelope
+            gain.gain.setValueAtTime(0.0001, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.045, audioCtx.currentTime + 0.08);
+            gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 1.6);
 
             osc.connect(gain);
             gain.connect(audioCtx.destination);
 
             osc.start();
-            osc.stop(audioCtx.currentTime + 3.0);
+            osc.stop(audioCtx.currentTime + 1.8);
           } catch(e) {
-            // Audio context safely handled
+            // Audio context handled
           }
-        }, i * 380);
+        }, i * 360);
       });
     }
 
