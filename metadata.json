@@ -1,0 +1,8 @@
+{
+  "name": "Prity Kumari - A Special Tribute",
+  "description": "An interactive, elegant, and heartfelt tribute website created for Prity Kumari, featuring memories, extraordinary qualities, heartfelt notes, and warm compliments.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
